@@ -1,3 +1,5 @@
+/** @format */
+
 // import React from 'react'
 import Navbar from "../../components/Layouts/Navbar";
 import Footer from "../../components/Layouts/Footer";
@@ -8,15 +10,15 @@ import Head from "next/head";
 const appdevelopment = () => {
   return (
     <>
-            <Head>
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <title>App Development</title>
-        </Head>
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>App Development</title>
+      </Head>
       <Navbar />
 
       <div className="blog_img_banner">
-          <img loading="lazy" src="/images/service/ARDROID.jpg" alt="" />
-        </div>
+        <img loading="lazy" src="/images/service/ARDROID.jpg" alt="" />
+      </div>
 
       <section className="service-details-area ptb-100">
         <div className="container">
@@ -24,7 +26,8 @@ const appdevelopment = () => {
             <div className="col-lg-8">
               <div className="service-details-wrap">
                 <div className="service-img">
-                  <img loading="lazy"
+                  <img
+                    loading="lazy"
                     src="/images/services-details/services-details.jpg"
                     alt="Image"
                   />

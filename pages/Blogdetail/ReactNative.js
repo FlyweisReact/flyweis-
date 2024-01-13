@@ -1,3 +1,5 @@
+/** @format */
+
 import React from "react";
 import Navbar from "../../components/Layouts/Navbar";
 import Footer from "../../components/Layouts/Footer";
@@ -8,14 +10,19 @@ import Head from "next/head";
 const ReactNative = () => {
   return (
     <div>
-             <Head>
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <title>React Native</title>
-        </Head>
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>React Native</title>
+      </Head>
       <Navbar />
 
       <div className="blog_img_banner ">
-        <img loading="lazy" src="/images/blog/react-native_large.jpeg" alt="" className="native_image_height" />
+        <img
+          loading="lazy"
+          src="/images/blog/react-native_large.jpeg"
+          alt=""
+          className="native_image_height"
+        />
       </div>
 
       <section className="service-details-area ptb-100">

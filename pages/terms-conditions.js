@@ -16,12 +16,7 @@ class TermsConditions extends Component {
             className="native_image_height"
           />
         </div>
-        {/* <PageBanner 
-                    pageTitle="Terms & Conditions" 
-                    homePageUrl="/" 
-                    homePageText="Home" 
-                    activePageText="Terms & Conditions" 
-                />  */}
+  
 
         <div className="text-container ptb-100">
           <div className="container">

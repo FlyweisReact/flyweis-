@@ -10,13 +10,7 @@ const thankyou = () => {
       <ThankYouNavbar />
       <div className="thanks_page">
         <div className="thankpage">
-          {/* <h1>Message send successfully</h1> */}
-          <div className="text-center">
-            <img
-              src="/images/flyweis_logo.png"
-              style={{ width: "150px", height: "150px" }}
-            />
-          </div>
+          
           <h2 className="class_thenk text-center">Thank You</h2>
           <p className="connect text-center">
             We will Connect with you Shortly

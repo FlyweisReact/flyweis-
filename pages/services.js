@@ -13,12 +13,7 @@ class Services extends Component {
           <title>Services</title>
         </Head>
         <Navbar />
-        {/* <PageBanner 
-                    pageTitle="Services Style One" 
-                    homePageUrl="/" 
-                    homePageText="Home" 
-                    activePageText="Services Style One" 
-                />  */}
+
 
         <div className="blog_img_banner">
           <img loading="lazy" src="/images/service/Services.jpg" alt="" />

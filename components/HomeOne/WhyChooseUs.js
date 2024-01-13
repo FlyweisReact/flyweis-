@@ -1,3 +1,4 @@
+import EnquiryForm from "../enquiryForm";
 
 const WhyChooseUs = () => {
     return (
@@ -6,13 +7,12 @@ const WhyChooseUs = () => {
                 <div className="row">
                     <div className="col-8">
                         <div className="choose-title">
-                            {/* <span>WHY CHOOSE US</span> */}
                             <h2>We just don’t create websites - we provide end-to-end services for your business.</h2>
                         </div>
                     </div>
                 </div>
 
-                <div className="row align-items-center">
+                <div className="row align-items-center justify-content-between">
                     <div className="col-lg-6">
                         <div className="choose-content">
                             <ul>
@@ -36,16 +36,17 @@ const WhyChooseUs = () => {
                                     <span>
                                         03 <i className="flaticon-support"></i>
                                     </span>
-                                    <h3>Support</h3>
-                                    <p>Post-deployment, we provide support so that you and your team are comfortable in managing the platform</p>
+                                    <h3>Maintenance and Support</h3>
+                                    <p>We offer ongoing maintenance and support to keep your website up to date and performing optimally</p>
                                 </li>
                             </ul>
                         </div>
                     </div>
 
-                    <div className="col-lg-6">
-                        <div className="choose-img">
-                            <img  loading="lazy" src="/images/choose-img.png" alt="Image" />
+                    <div className="col-lg-5" >
+                        <div className="choose-img" >
+                        
+                        <EnquiryForm  />
                         </div>
                     </div>
                 </div>

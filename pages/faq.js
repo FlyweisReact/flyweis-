@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Navbar from "../components/Layouts/Navbar";
-import PageBanner from "../components/Common/PageBanner";
 import FaqContent from "../components/Faq/FaqContent";
 import AskQuestionForm from "../components/Faq/AskQuestionForm";
 import Footer from "../components/Layouts/Footer";
@@ -12,6 +11,8 @@ class Faq extends Component {
         <Head>
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <title>FAQ</title>
+          
+
         </Head>
         <Navbar />
 
@@ -23,13 +24,6 @@ class Faq extends Component {
             className="native_image_height"
           />
         </div>
-
-        {/* <PageBanner 
-                    pageTitle="Frequently Asked Questions" 
-                    homePageUrl="/" 
-                    homePageText="Home" 
-                    activePageText="Frequently Asked Questions" 
-                />  */}
         <FaqContent />
         <AskQuestionForm />
         <Footer />

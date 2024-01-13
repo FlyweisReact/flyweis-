@@ -12,6 +12,8 @@ class Contact extends Component {
         <Head>
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <title>Contact-Us</title>
+          
+
         </Head>
         <Navbar />
         <PageBanner
@@ -20,13 +22,6 @@ class Contact extends Component {
           homePageText="Home"
           activePageText="Contact Style One"
         />
-
-        {/*                 
-                        <div className='banner_blog'>
-                        <img loading="lazy" src="/images/contact_img1.png" alt=""  />
-                        
-                        </div> */}
-
         <ContactInfo />
         <ContactForm />
         <Footer />

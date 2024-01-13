@@ -40,31 +40,7 @@ const Index4 = () => {
       axios.post(url, temp).then(
         (res) => {
           console.log("data flyweis:::", res);
-          // if (res.data.response.signatureIsValid === "false") {
-          //   store.addNotification({
-          //     title: "",
-          //     message: "Payment Failed",
-          //     type: "danger",
-          //     insert: "top-right",
-          //     container: "top-right",
-          //     dismiss: {
-          //       duration: 5000,
-          //       onScreen: true,
-          //     },
-          //   });
-          // } else {
-          //   store.addNotification({
-          //     title: "",
-          //     message: "Payment Success",
-          //     type: "success",
-          //     insert: "top-right",
-          //     container: "top-right",
-          //     dismiss: {
-          //       duration: 5000,
-          //       onScreen: true,
-          //     },
-          //   });
-          // }
+       
         },
 
         (error) => {
@@ -91,16 +67,8 @@ const Index4 = () => {
         handler: function (response) {
           SendpaymentData("Payment Successfull");
 
-          // console.log(response.razorpay_payment_id);
-          // console.log(response.razorpay_order_id);
-          // console.log(response.razorpay_signature);
-          // alert(response.data.response.signatureIsValid);
         },
-        // "prefill": {
-        //     "name": "Gaurav Kumar",
-        //     "email": "gaurav.kumar@example.com",
-        //     "contact": "9999999999"
-        // },
+
         notes: {
           address: "Razorpay Corporate Office",
         },
@@ -111,13 +79,7 @@ const Index4 = () => {
       var rzp1 = new window.Razorpay(options);
       rzp1.on("payment.failed", function (response) {
         SendpaymentData("Payment Not Successfull");
-        // alert(response.error.code);
-        // alert(response.error.description);
-        // alert(response.error.source);
-        // alert(response.error.step);
-        // alert(response.error.reason);
-        // alert(response.error.metadata.order_id);
-        // alert(response.error.metadata.payment_id);
+
       });
       rzp1.open();
     } else {
@@ -131,33 +93,14 @@ const Index4 = () => {
 
       <Navbar />
       <MainBanner />
-      {/* <PageBanner
-        pageTitle="Service "
-        homePageUrl="/"
-        homePageText="Home"
-        activePageText="Service Details"
-      /> */}
+
 
       <div>
-        {/* <nav class="navbar navbar-expand-lg main_header ">
-          <div className="container">
-            <a class="navbar-brand">
-              <img loading="lazy" src="/images/flyweis_logo.png" alt="logo" />
-            </a>
-          </div>
-        </nav> */}
-        {/* <div className="main_header_banner mt-5">
-          <img loading="lazy" src=" /images/service/paymentSecure.png" alt="" />
-        </div> */}
+ 
 
         <div>
           <div className="ask-question col-lg-12 col-md-12">
-            {/* <h3 className="enquiry_heading">DO YOU HAVE PROJECT IN MIND?</h3>
-            <p className="text-center">
-              Our Expert will Assist You About Your Project and Develop as Per
-              Your Requirement
-            </p> */}
-
+    
             <div className="row">
               <div className="col-lg-6 col-sm-12">
                 <div className="form-group">
@@ -212,7 +155,6 @@ const Index4 = () => {
                 <button
                   className="default-btn btn-two"
                   onClick={() => proceeds(amount)}
-                  // onClick={SendpaymentData}
                 >
                   <span className="btn-whatsapp-pulse">
                     <i class="bx bxl-whatsapp"></i>

@@ -5,8 +5,9 @@ import axios from "axios";
 import { store } from "react-notifications-component";
 import Router from "next/router";
 import Head from "next/head";
+import { AiOutlineClose } from "react-icons/ai";
 
-const AskQuestionForm = () => {
+const AskQuestionForm = ({ setModal }) => {
   const [loading, setLoading] = useState(false);
   const [name, setname] = useState("");
   const [email, setemail] = useState("");
@@ -93,6 +94,7 @@ const AskQuestionForm = () => {
     });
     return false;
   }
+
   return (
     <>
       <Head>
@@ -117,7 +119,14 @@ const AskQuestionForm = () => {
           }}
         />
       </Head>
+
       <div className="ask-question">
+        <div style={{ display: "flex", justifyContent: "flex-end" }}>
+          <AiOutlineClose
+            onClick={() => setModal(false)}
+            style={{ fontSize: "20px", cursor: "pointer" }}
+          />
+        </div>
         <h3 className="enquiry_heading">Enquire Now</h3>
         <form onSubmit={SendContactData}>
           <div className="row">
@@ -134,7 +143,7 @@ const AskQuestionForm = () => {
                   id="name"
                   autoComplete="off"
                   className="form-control"
-                  placeholder="Your Name"
+                  placeholder=" Name"
                   maxLength={25}
                 />
               </div>
@@ -150,7 +159,7 @@ const AskQuestionForm = () => {
                   }}
                   id="email"
                   className="form-control"
-                  placeholder="Your Email"
+                  placeholder=" Email"
                   maxLength={30}
                 />
               </div>
@@ -166,11 +175,12 @@ const AskQuestionForm = () => {
                     setphone(e.target.value);
                   }}
                   className="form-control"
-                  placeholder="Your Phone"
+                  placeholder=" Phone"
                   maxLength={12}
                   minLength={10}
                 />
               </div>
+            
             </div>
 
             <div className="col-lg-12 col-md-12">
@@ -185,7 +195,7 @@ const AskQuestionForm = () => {
                   }}
                   cols="30"
                   rows="5"
-                  placeholder="Tell us about your requirements"
+                  placeholder="Tell us about your project"
                   maxLength={500}
                 ></textarea>
               </div>

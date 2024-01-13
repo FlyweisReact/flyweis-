@@ -70,7 +70,7 @@ class Navbar extends Component {
             <div className="container">
               <Link href="/">
                 <a className="navbar-brand">
-                  <img loading="lazy" src="/images/logo.svg" alt="logo"  />
+                  <img loading="lazy"   src="/images/flyweis_logo.png" alt="logo"  />
                 </a>
               </Link>
 

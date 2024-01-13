@@ -11,6 +11,7 @@ class NewsGrid extends Component {
         <Head>
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <title>Blog</title>
+    
         </Head>
                 <Navbar />
                         <div className='banner_blog'>

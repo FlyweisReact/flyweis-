@@ -1,84 +1,87 @@
-/*
-@File: Jumpx Template Styles
+/**
+ * This file contains the styling for the actual template, this
+ * is the file you need to edit to change the look of the
+ * template.
+ * 
+ * This files table contents are outlined below>>>>>
+ * 
+ * ****************************************** 
+ * * - Default Area Style
+ * * - Preloader Area Style
+ * * - Go Top Area Style
+ * * - Page navigation Area Style  
+ * * - Video wave Style
+ * * - Default Btn Area Style
+ * * - Read More Area Style
+ * * - Section Title Area Style 
+ * * - Preloader Area Style
+ * * - Keyframes Area Style 
+ * * - Nice Select Area Style
+ * * --- HOME ONE STYLE --- **
+ * * - Milford Nav Area Style
+ * * - Main Banner Area Style
+ * * - Features Area Style
+ * * - About Area Style 
+ * * - Choose Us Area Style
+ * * - Offer Area Style
+ * * - Business  Area Style
+ * * - Pricing Area Style
+ * * - Industries  Area Style
+ * * - Client Area Style
+ * * - News Area Style
+ * * - Footer Top Area Style
+ * * - Footer Bottom Area Style
+ * * --- HOME TWO STYLE --- **
+ * * - Banner Two Area Style
+ * * - Offer Area Two Style
+ * * - Pricing Area Style
+ * * - Newsletter Area Style
+ * * - Industries Serve Area Style
+ * * - Brand Area Serve Area Style 
+ * * --- HOME THREE STYLE --- **
+ * * - Main Banner Area Three Style
+ * * - Team Area Three Style
+ * * - Contact Area Three Style
+ * * --- HOME FOUR STYLE --- **
+ * * - Main Banner Four Area Style
+ * * - Case Area Style
+ * * - FAQ CSS
+ * * --- HOME FOUR STYLE --- **
+ * * - Banner Four Area Style
+ * * - Bg Color Four Area Style
+ * * - Home Four Section Title Color Area Style
+ * * - About Area Four Style
+ * * - Business Area Four Style
+ * * - Offer Area Four Style
+ * * - Industries Area Four Style
+ * * - Team Area Four Style
+ * * --- HOME FIVE STYLE --- **
+ * * - SliderArea Style
+ * * --- INNER PAGE STYLE --- **
+ * * - Page Title Area Style
+ * * - 404 Error Area Style
+ * * - Coming Soon Area Style
+ * * - Sign In & Log In  Area Style
+ * * - Ask Question Area Style
+ * * - Checkout Area Style 
+ * * - Cart Area Style
+ * * - Blog Details Area Style
+ * * - Contact Info Area Style
+ * * - Main Contact Area Style
+ * * - Contact Info Area Three Style 
+ * * - Service Details Area Style
+ * 
+ * ******************************************
+ * /*
+ * 
+ * /*
+ * Default Style
+ * ============================
+ *
+ * @format
+ * @File: Jumpx Template Styles
+ */
 
-* This file contains the styling for the actual template, this
-is the file you need to edit to change the look of the
-template.
-
-This files table contents are outlined below>>>>>
-
-******************************************* 
-** - Default Area Style
-** - Preloader Area Style
-** - Go Top Area Style
-** - Page navigation Area Style  
-** - Video wave Style
-** - Default Btn Area Style
-** - Read More Area Style
-** - Section Title Area Style 
-** - Preloader Area Style
-** - Keyframes Area Style 
-** - Nice Select Area Style
-** --- HOME ONE STYLE --- **
-** - Milford Nav Area Style
-** - Main Banner Area Style
-** - Features Area Style
-** - About Area Style 
-** - Choose Us Area Style
-** - Offer Area Style
-** - Business  Area Style
-** - Pricing Area Style
-** - Industries  Area Style
-** - Client Area Style
-** - News Area Style
-** - Footer Top Area Style
-** - Footer Bottom Area Style
-** --- HOME TWO STYLE --- **
-** - Banner Two Area Style
-** - Offer Area Two Style
-** - Pricing Area Style
-** - Newsletter Area Style
-** - Industries Serve Area Style
-** - Brand Area Serve Area Style 
-** --- HOME THREE STYLE --- **
-** - Main Banner Area Three Style
-** - Team Area Three Style
-** - Contact Area Three Style
-** --- HOME FOUR STYLE --- **
-** - Main Banner Four Area Style
-** - Case Area Style
-** - FAQ CSS
-** --- HOME FOUR STYLE --- **
-** - Banner Four Area Style
-** - Bg Color Four Area Style
-** - Home Four Section Title Color Area Style
-** - About Area Four Style
-** - Business Area Four Style
-** - Offer Area Four Style
-** - Industries Area Four Style
-** - Team Area Four Style
-** --- HOME FIVE STYLE --- **
-** - SliderArea Style
-** --- INNER PAGE STYLE --- **
-** - Page Title Area Style
-** - 404 Error Area Style
-** - Coming Soon Area Style
-** - Sign In & Log In  Area Style
-** - Ask Question Area Style
-** - Checkout Area Style 
-** - Cart Area Style
-** - Blog Details Area Style
-** - Contact Info Area Style
-** - Main Contact Area Style
-** - Contact Info Area Three Style 
-** - Service Details Area Style
-
-*******************************************
-/*
-
-/*
-Default Style
-============================*/
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800&display=swap");
 body {
@@ -315,7 +318,7 @@ textarea.form-control {
 }
 .enquiry_heading {
   font-size: 32px !important;
-  color: #0b5427 !important;
+  color: #0b5427;
 }
 .ptb-100 {
   padding-top: 100px;
@@ -2236,6 +2239,22 @@ Features Area Style
   -webkit-transition: all 0.6s ease;
   transition: all 0.6s ease;
 }
+.single-features .getCode {
+  width: 50%;
+  margin: auto;
+  line-height: 40px;
+  background-color: #0b5427;
+  color: #ffffff;
+  box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+  display: inline-block;
+  font-weight: 600;
+  transition: all 0.6s ease;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.single-features .getCode span {
+  margin-left: 5px;
+}
 
 .single-features:hover {
   -webkit-transform: scale(1.05);
@@ -2250,7 +2269,6 @@ Features Area Style
 }
 
 .single-features:hover .read-more-icon span {
-  /* background-color: #1dd3f8; */
   background-color: #0b5427;
   color: #ffffff;
 }
@@ -5190,6 +5208,19 @@ Ask Question Area Style
 .ask-question .form-group {
   margin-bottom: 30px;
 }
+.new-form .form-control:hover:focus,
+.form-control:focus {
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+.new-form .form-control:focus {
+  color: #000000;
+  background-color: #fff;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: 0;
+  border: 1px solid #fff;
+}
 
 .ask-question .form-group .form-control {
   border-radius: 4px;
@@ -6904,7 +6935,8 @@ Service Details Area Style
   /* height: 71px; */
   height: 101px;
   width: 100%;
-  min-width: 120px ;
+  min-width: 120px;
+  max-width: 150px;
 }
 span.headshet {
   color: #fff;
@@ -6960,7 +6992,7 @@ h1.app_mar {
 }
 .enquiry_heading {
   font-size: 32px !important;
-  color: #0b5427 !important;
+  color: #0b5427;
 }
 .blog_img_banner {
   margin-top: -40px !important;
@@ -7047,4 +7079,14 @@ h1.app_mar {
 
 .placeholder::placeholder {
   color: black;
+}
+
+.react-tel-input .flag-dropdown {
+  border: none !important;
+  background-color: transparent !important;
+}
+.react-tel-input .form-control {
+  background-color: transparent !important;
+  border: none !important;
+  width: 100% !important;
 }

@@ -16,12 +16,6 @@ class PrivacyPolicy extends Component {
         <div className="blog_img_banner">
           <img loading="lazy" src="/images/Fernie-Privacy-Policy.jpg" alt=""  className="native_image_height" />
         </div>
-        {/* <PageBanner 
-                    pageTitle="Privacy Policy" 
-                    homePageUrl="/" 
-                    homePageText="Home" 
-                    activePageText="Privacy Policy" 
-                />  */}
 
         <div className="text-container ptb-100">
           <div className="container">

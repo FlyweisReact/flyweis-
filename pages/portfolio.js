@@ -15,21 +15,14 @@ class Team extends Component {
           <title>Portfolio</title>
         </Head>
                 <Navbar />
-{/* 
-                <div className='banner_blog'>
-                        <img loading="lazy" src="/images/contact 2.png" alt=""  />
-                        
-                        </div>  */}
+
                  <Portfoliobanner 
                     pageTitle="Team" 
                     homePageUrl="/" 
                     homePageText="Home" 
                     activePageText="Team" 
                 /> 
-                  {/* <div className='banner_blog'>
-                        <img loading="lazy" src="/images/portfo_1.jpg" alt=""  />
-                        
-                        </div> */}
+
 
                 <TeamCard />
                 <Footer />

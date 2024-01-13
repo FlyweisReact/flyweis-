@@ -11,6 +11,8 @@ function cybersecurity() {
              <Head>
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <title>Cyber Security</title>
+          
+
         </Head>
       <Navbar />
       <div className="blog_img_banner">
